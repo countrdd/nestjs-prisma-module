@@ -62,6 +62,7 @@ let PrismaService = class PrismaService {
         break;
       case 'mongodb':
         console.log(string);
+        console.log('Checking....');
         break;
       case 'mysql':
       case 'postgresql':
