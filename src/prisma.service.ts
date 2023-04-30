@@ -33,8 +33,8 @@ export default class PrismaService<T extends ClassLike>
         string.params = { ...string.params, database: name };
         break;
       case 'mongodb':
+        console.log('Checking.');
         console.log(string);
-        console.log('Checking....d');
         //   const databaseUrl = process.env.DATABASE_URL!.replace('public', tenantId);
         break;
       case 'mysql':
