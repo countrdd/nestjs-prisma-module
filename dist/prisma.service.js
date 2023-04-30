@@ -61,6 +61,7 @@ let PrismaService = class PrismaService {
         });
         break;
       case 'mongodb':
+        console.log(string);
       case 'mysql':
       case 'postgresql':
         string.path = [name, ...(string.path || [])];
