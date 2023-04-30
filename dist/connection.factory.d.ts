@@ -1,4 +1,3 @@
-import type { FactoryProvider } from '@nestjs/common';
 import type PrismaService from './prisma.service';
 import type { ClassLike } from './types';
 declare const _default: (

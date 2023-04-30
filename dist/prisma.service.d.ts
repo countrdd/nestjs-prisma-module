@@ -20,7 +20,7 @@ export default class PrismaService<T extends ClassLike>
     multitenancy?: PluginConfig<T>['multitenancy'],
     logging?: PluginConfig<T>['logging'],
   );
-  getTenantDBUrl(name: string): string;
+  getTenantDBUrl(name: string): any;
   generateClient(name: string): InstanceType<T>;
   getConnection(tenant: string): any;
   onModuleDestroy(): Promise<void>;
