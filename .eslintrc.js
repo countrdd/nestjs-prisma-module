@@ -18,5 +18,6 @@ module.exports = {
   rules: {
     // 😭 Weird ESLint warnings get thrown when using Decorators...
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };
