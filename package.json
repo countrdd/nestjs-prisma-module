@@ -57,5 +57,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.4.0",
+    "@nestjs/core": "^9.4.0",
+    "connection-string": "^4.3.6"
   }
 }
