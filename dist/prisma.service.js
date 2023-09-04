@@ -105,10 +105,10 @@ let PrismaService = class PrismaService {
       this.logger.log(`<${this.name}> | ✅ Creating new ${tenant} DB client`);
       this.connections[tenant] = this.generateClient(tenant);
       this.connections[tenant].$connect();
-      this.connections[tenant].$on('beforeExit', async () => {
-        this.logger.log(`<${this.name}> | 🗑 Exiting ${tenant} db connections`);
-        await this.connections[tenant].$disconnect();
-      });
+    //  this.connections[tenant].$on('beforeExit', async () => {
+    //    this.logger.log(`<${this.name}> | 🗑 Exiting ${tenant} db connections`);
+    //    await this.connections[tenant].$disconnect();
+    //  });
     } else {
       if (this.logging)
         this.logger.log(
